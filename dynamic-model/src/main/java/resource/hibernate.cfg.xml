@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	
+    <session-factory>
+    
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/dynamic</property>
+        <property name="connection.username">thiago</property>
+        <property name="connection.password">fonseca</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="show_sql">true</property>
+
+        <property name="hbm2ddl.auto">create</property>
+        
+        <!-- mapping resource="/resource/mapping.hbm.xml" /-->
+        
+    </session-factory>
+
+</hibernate-configuration>
